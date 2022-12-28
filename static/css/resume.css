@@ -1,0 +1,221 @@
+
+#sections{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+#sections-edu{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+#sections-exp{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+#sections-skills{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+#sections-cont{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+#big{
+    font-family: monospace;
+    font-size: 100px;
+    width:30%;
+    text-align: center;
+    color:white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#big-i{
+    font-family: monospace;
+    font-size: 30px;
+    width:30%;
+    text-align: center;
+    color:white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+#btn{
+    width:70%;
+    height:100%;
+    font-size: 30px;
+    color:white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px rgb(58, 58, 58);
+}
+#btn:active{
+    box-shadow: 0 0px none;
+    transform: translateY(2px);
+}
+#info{
+    padding-top: 7%;
+    font-family: monospace;
+    font-size: 100px;
+    color:black;
+    font-size: 20px;
+    width:60%;
+    /*border-bottom: 2px solid black;*/
+    text-align: justify;
+    padding-right: 10px;
+}
+#info a{
+    text-decoration: none;
+    color:goldenrod;
+}
+#percent{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+#mech{
+    width:60%;
+    background-color: black;
+    color:goldenrod;
+    text-align: center;
+    font-family: monospace;
+}
+#admin{
+    width:20%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#programming{
+    width:20%;
+    background-color: black;
+    color:goldenrod;
+    text-align: center;
+    font-family: monospace;
+}
+#sections-exp #helper{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+#sections-skills #helper{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+#helper #info{
+    width:100%;
+    border:none;
+    margin-bottom: px;
+    padding-bottom: 0px;
+}
+
+#mech-mob{
+    width:80%;
+    background-color: black;
+    color:goldenrod;
+    text-align: center;
+    font-family: monospace;
+}
+#admin-mob{
+    width:20%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#programming-free{
+    width:80%;
+    background-color: black;
+    color:goldenrod;
+    text-align: center;
+    font-family: monospace;
+}
+#graphics-free{
+    width:20%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+    
+}
+#helper{
+    
+    padding-bottom: 10px;
+}
+#skill-per-auto{
+    width:70%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#skill-per-py{
+    width:90%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#skill-per-ml{
+    width:80%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#skill-per-sql{
+    width:80%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#skill-per-front{
+    width:80%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#skill-per-back{
+    width:70%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#skill-per-photo{
+    width:90%;
+    text-align: center;
+    background-color: goldenrod;
+    color:black;
+    padding-top: 2px;
+    font-family: monospace;
+}
+#percent-skills{
+    background-color: black;
+}

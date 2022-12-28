@@ -1,0 +1,79 @@
+
+#inner-project{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#projects div{
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+#projects div a{
+    text-decoration: none;
+    color:black;
+    
+}
+#projects h1{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+   
+}
+#projects div p{
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 5px double black;
+    border-top: 5px double black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#ford-bike{
+    margin-bottom: 10px;
+}
+pre{
+    text-align: left;
+    font-family: monospace;
+    font-weight: bold;
+    color:rgb(6, 6, 20);
+}
+#projects #money p{
+    border-bottom: none;
+}
+#projects #spec{
+    color:goldenrod;
+}
+#proj-li{
+    margin-bottom:0px;
+    font-family: monospace;
+}
+#list{
+  text-align: center;
+}
+#list ol{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    
+}
+#list li{
+    list-style: none;
+    font-family: monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#list a{
+    color:rgb(121, 90, 11);
+    text-decoration: none;
+}
+#list a:hover{
+    color:goldenrod;
+    
+}
