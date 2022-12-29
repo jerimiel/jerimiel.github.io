@@ -4,19 +4,16 @@ const exp = document.getElementById("sections-exp")
 const skills = document.getElementById("sections-skills")
 const cont = document.getElementById("sections-cont")
 
-sections.addEventListener('click',function(){
-    sections.innerHTML = `<p id='big'>INTRO</p><p id='info'>
+
+    sections.innerHTML = `<p id='big'>INTRODUCTION</p><p id='info'>
     Knowledgeable Programmer skilled in data collection,
      analysis and management, front end and back end web 
      development. I work well under pressure and make it a
      priority to deliver top notch work.</id>`
-})
-sections.addEventListener('mouseleave',function(){
-    sections.innerHTML = `<p id='big-i'><button id='btn'>INTRODUCTION</button></p>`
-})
 
-edu.addEventListener('click',function(){
-    edu.innerHTML = `<p id="big">EDU</p><p id='info'>
+
+
+    edu.innerHTML = `<p id="big">EDUCATION</p><p id='info'>
     <b>Bachelor of Engineering: Mechanical Engineering</b>
     <br>
     Landmark University
@@ -37,13 +34,10 @@ edu.addEventListener('click',function(){
     <br>
     <a href="https://confirm.udacity.com/5Y7KNK7J">https://confirm.udacity.com/5Y7KNK7J</a>
     </id>`
-})
-edu.addEventListener('mouseleave',function(){
-    edu.innerHTML = `<p id='big-i'><button id='btn'>EDUCATION</button></p>`
-})
 
-exp.addEventListener('click',function(){
-    exp.innerHTML = `<p id='big'>EXP</p><div id="helper"><p id='info'>
+
+
+    exp.innerHTML = `<p id='big'>EXPERIENCE</p><div id="helper"><p id='info'>
     2021 - now
     <br>
     Nigerian Meteorological Agency (Compulsory Service)
@@ -79,13 +73,11 @@ exp.addEventListener('click',function(){
     </helper>
     
     `
-})
-exp.addEventListener('mouseleave',function(){
-    exp.innerHTML = `<p id='big-i'><button id='btn'>EXPERIENCE</button></p>`
-})
 
 
-skills.addEventListener('click',function(){
+
+
+
     skills.innerHTML = `<p id='big'>SKILLS</p><div id="helper"><p id='info'>
     <br>
     Autocad
@@ -150,15 +142,12 @@ skills.addEventListener('click',function(){
     </div>
     
     `
-})
-skills.addEventListener('mouseleave',function(){
-    skills.innerHTML = `<p id='big-i'><button id='btn'>SKILLS</button></p>`
-})
 
 
 
-cont.addEventListener('click',function(){
-    cont.innerHTML = `<p id="big">CONT</p><p id='info'>
+
+
+    cont.innerHTML = `<p id="big">CONTACT</p><p id='info'>
     <b>Linkedin</b>
     <br>
     <a href="https://www.linkedin.com/in/victorapeh">https://www.linkedin.com/in/victorapeh</a>
@@ -173,7 +162,3 @@ cont.addEventListener('click',function(){
     <br>
     <a href="https://github.com/jerimiel">https://github.com/jerimiel</a>
     </id>`
-})
-cont.addEventListener('mouseleave',function(){
-    cont.innerHTML = `<p id='big-i'><button id='btn'>CONTACT</button></p>`
-})

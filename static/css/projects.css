@@ -1,4 +1,9 @@
-
+body{
+    color: goldenrod;
+}
+img{
+    background-color: white;
+}
 #inner-project{
     margin-bottom: 30px;
     margin-top: 10px;
@@ -11,7 +16,7 @@
 }
 #projects div a{
     text-decoration: none;
-    color:black;
+    color:white;
     
 }
 #projects h1{
@@ -19,16 +24,14 @@
     font-size: 30px;
     font-weight: bold;
     color: white;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
    
 }
 #projects div p{
     font-family: monospace;
     font-size: 20px;
     text-align: center;
-    border-bottom: 5px double black;
-    border-top: 5px double black;
+    border-bottom: 5px double goldenrod;
+    border-top: 5px double goldenrod;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -39,7 +42,7 @@ pre{
     text-align: left;
     font-family: monospace;
     font-weight: bold;
-    color:rgb(6, 6, 20);
+    color:goldenrod;
 }
 #projects #money p{
     border-bottom: none;
