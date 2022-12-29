@@ -33,7 +33,7 @@
 
 #big{
     font-family: monospace;
-    font-size: 300%;
+    font-size: 200%;
     width:30%;
     text-align: center;
     color:black;
@@ -47,7 +47,7 @@
     font-size: 100px;
     color:goldenrod;
     font-size: 180%;
-    width:60%;
+    width:50%;
     /*border-bottom: 2px solid black;*/
     text-align: justify;
     padding-right: 10px;
