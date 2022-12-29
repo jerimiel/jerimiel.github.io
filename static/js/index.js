@@ -6,7 +6,7 @@ btn.addEventListener("click",function(){
     if(clicked===false){
     bar.innerHTML = `
     <button>
-                <a href="">Home</a>
+                <a href="index.html">Home</a>
             </button>
             <br>
             <button>
