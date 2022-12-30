@@ -5,21 +5,21 @@ let clicked = false
 btn.addEventListener("click",function(){
     if(clicked===false){
     bar.innerHTML = `
-    <button>
-                <a href="index.html">Home</a>
-            </button>
+    <a href="index.html"><button>
+                Home
+            </button></a>
             <br>
-            <button>
-                <a href="aboutme.html">AboutMe</a>
-            </button>
+            <a href="aboutme.html"><button>
+                AboutMe
+            </button></a>
             <br>
-            <button>
-                <a href="resume.html">Resume</a>
-            </button>
+            <a href="resume.html"><button>
+                Resume
+            </button></a>
             <br>
-            <button>
-                <a href="projects.html">Projects</a>
-            </button>
+            <a href="projects.html"><button>
+                Projects
+            </button></a>
    `
    clicked = true
     }

@@ -33,7 +33,7 @@ const cont = document.getElementById("sections-cont")
     Udacity
     <br>
     <a href="https://confirm.udacity.com/5Y7KNK7J">https://confirm.udacity.com/5Y7KNK7J</a>
-    </id>`
+    </p>`
 
 
 
@@ -70,7 +70,7 @@ const cont = document.getElementById("sections-cont")
     <div id="programming-free">Programming</div>
     <div id="graphics-free">Graphics</div>
     </div>
-    </helper>
+    </div>
     
     `
 
@@ -161,4 +161,4 @@ const cont = document.getElementById("sections-cont")
     <b>Github</b>
     <br>
     <a href="https://github.com/jerimiel">https://github.com/jerimiel</a>
-    </id>`
+    </>`

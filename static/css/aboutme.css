@@ -4,16 +4,21 @@
     padding-right: 5%;
 }
 #image-div1{
-    text-align: center;
-    background-color:black;
     color:white;
     /*border-radius: 200px;
     border: 2px solid black;*/
    margin-top: 3%;
+   text-align: center;
 }
 #txt{
     width:100%;
     font-family:monospace;
     text-align:justify;
     margin-top: 0px;
+}
+img{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width:20%;
+  
 }

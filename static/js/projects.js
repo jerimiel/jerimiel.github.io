@@ -10,7 +10,7 @@ details for a bike sharing company.
   the trend in usage of the go bike services in relation to
   factors such as customers age and the time of the year.
   The dataset can be gotten from kaggle right here
-  <a href="https://www.kaggle.com/datasets/chirag02/ford-gobike-2019feb-tripdata" color="blue" id="spec">201902-fordgobike-tripdata.csv</a>
+  <a id="spec" href="https://www.kaggle.com/datasets/chirag02/ford-gobike-2019feb-tripdata">201902-fordgobike-tripdata.csv</a>
   <br>
   <br>
   <b>Observations</b>
@@ -81,7 +81,7 @@ details for a bike sharing company.
   The code is given below
   <br>
   <br>
-  <pre>
+  <pre><code>
 <i>#import necessary packages</i>
 import pandas as pd
 import requests
@@ -155,7 +155,7 @@ else:
 
 
 input("Press Enter to exit...")
-  </pre>`,
+  </code></pre>`,
   `The Pharmacy management system is a web app i designed for the use of pharmacists
   in hospitals, it serves as an interface for a database system. i also took this further by
   writing a script for a client.py app which is used by the doctors to know the kind of drugs available
@@ -163,7 +163,7 @@ input("Press Enter to exit...")
     leads to the pharmacy management webapp.
     Here is the client.py code
    <br>
-   <pre>
+   <pre><code>
 import requests
 import json
 from tkinter import *
@@ -219,7 +219,7 @@ button.grid()
 
 root.mainloop()
 
-   </pre>
+   </code></pre>
 <br>
 `
 ]
@@ -230,10 +230,9 @@ root.mainloop()
   for(let i=0;i < outerId.length;i+=1){
     emp = emp +  `
     <div id=${outerId[i]}>
-    <a href="">
         <div id="inner-project">
             <h1>${header[i]}</h1>
-            <p>`+paragraphs[i]+`</p></div></a>`
+            <p>`+paragraphs[i]+`</p></div>`
     
     
   }
