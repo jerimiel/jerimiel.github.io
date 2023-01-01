@@ -1,148 +1,99 @@
 body{
-    margin:auto;
-    background-image:url('img2.jpg');
-    background-position-y:40%;
+    background-image: url('abstract.png');
     background-position-x: center;
-    background-attachment:fixed;
-    overflow-x: hidden;
-    
-}
-#top-nav{
-    height:1%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    display: flex;
-    margin-bottom: 5%;
-}
-#left{
-    height:10%;
-    width:50%;
-    position: fixed;
-    top:0%;
-    left:0%;
-    margin-bottom: 1%;
-    background-color: rgb(49, 47, 47);
-    
-}
-#right{
-    width:50%;
-    height:10%;
-    text-align: center;
-    position: fixed;
-    top:0%;
-    right:0%;
-    background-color:rgb(49, 47, 47);
-    margin-bottom: 1%;
-   
-}
-#top-btn{
-    width:48px;
-    height:48px;
-    background-color:transparent;
-    background-image: url("burger3.png");
+    background-position-y: center;
+    background-attachment: fixed;
+    background-size:cover;
     background-repeat: no-repeat;
-    border:none;
-    float: right;
-    margin-top: 1%;
-    margin-right: 15%;
-    margin-bottom: 1%;
 }
-
-
-#left h1{
-    font-family: monospace;
-    margin-top: 10px;
-    font-size:150%;
-    margin-top: 1%;
-    margin-left:1%;
-}
-#v{
+#prog{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
-    font-weight: bold;
-    -webkit-text-stroke-color: goldenrod;
-    -webkit-text-stroke-width: 1px;
+    position: absolute;
+    top:47%;
+    left:5%;
+    font-size: 400%;
 }
-#folio{
-    color:black;
-}
-
-#txt{
-    width:100%;
-    font-family:monospace;
-    
+#prog p{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    letter-spacing: 10000%;
+    color: goldenrod;
+    letter-spacing: 1pc;
+    font-family: monospace;
     font-weight: bolder;
-    font-size: 500%;
-    text-align:center;
-    padding-top: 50px;
+    text-shadow:-0.2pc -0.1pc 0.2pc black;
 }
-#txt p{
-    margin: 20px;
-    margin-top: 50px;
-    text-shadow:1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    color: white;
-    margin-top: 0px;
-    /*-webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 3px;*/
+#prog pre{
+    font-size: 25%;
+    word-break: break-all;
+    white-space:pre-wrap;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-family:monospace;
+    word-spacing: 0.5pc;
+    letter-spacing: 0.1pc;
 }
-#txt img{
-    width:10%;
+#top_nav{
+    text-align: center;
+    position: ;
 }
-
-#image-div{
-    margin-top: 7%;
-    width:60%
-}
-
-#bar{
+#top_nav button{
+    background-color: transparent;
+    border-color: transparent;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
     
-    display: block;
-    float: right;
-    position:fixed;
-    right: 10%;
-    top:10%;
 }
-#bar button a{
+#top_nav button a{
     text-decoration: none;
-    color:black;
+    color: white;
     font-family: monospace;
-    font-size: large;
+    font-size: 110%;
 }
-#bar button{
-    border: none;
-    display:inline-block;
-    background-color: black;
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    width: 200%;
-    border-bottom: 2px solid black;
-    background-color: goldenrod;
-    opacity: 20%;
-}
-#bar button:hover{
-    opacity:100%
+#proj-a{
+    position: absolute;
+    top:80%;
+    left:5%;
+    width:20%;
+    background-color: transparent;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    border-color: white;
+    color:white;
+    font-family: monospace;
+    height:5%;
+    border-radius: 30px;
+    text-shadow:-0.2pc -0.1pc 0.2pc black;
 }
 
-
-@media screen and (max-width:600px) {
-    #top-nav{
-        text-align: center;
-        width: 100%;
-        height:50px;
-        overflow:hidden;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        display: flex;
-        margin-bottom: 10px solid black;
-    }
-    #left{
-        display:none
-
-    }
-    #right{
-        width:100%;
-        border-bottom: none;
-    }
-    #bar button{opacity:100%}
+#proj-a a{
+    text-decoration: none;
+}
+#name{
+    color: white;
+    font-family: monospace;
+    font-size: 400%;
+    position: absolute;
+    left:5%;
+    top:45%;
+}
+#ai{
+    color: goldenrod;
+    text-shadow:-0.2pc -0.1pc 0.2pc black;
+}
+/*Resume*/
+#resume{
+    position: absolute;
+    top:110%;
+    left:5%;
+}
+#resume h1{
+    color:white;
+    font-family: system-ui;
+}
+#resume h2{
+    color: white;
+    font-family: system-ui;
 }
