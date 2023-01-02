@@ -241,7 +241,7 @@ root.mainloop()
 let images = ['athena12.jpg', 'bahwor card.png', 'barcawh.jpg',
  'baw.jpg', 'bearlast.jpg', 'BULBRTFRTHH.jpg', 'burger2.jpg',
   'chegue1r.jpg', 'dat guyshaded.jpg', 'dreeee.jpg', 'eago1.jpg', 
-  'ETHEREUM ACADEMIC.jpg', 'final.jpg', 'harl.jpg', 'hdfjhfposter2 (3).jpg', 
+  'ETHEREUM ACADEMIC.jpg', 'final.jpg', 'harl.jpg',
   'hyu (2).jpg', 'jblads (2).jpg', 'jokermon.jpg', 'liony.jpg', 'logo molo 123.png',
  'moi5.jpg', 'ojierou.jpg', 'samcorrectedbrick.jpg', 'tiger.jpg', 'victor2.jpg', 'WER (2).jpg', 'worly.jpg']
 let ims = ``
