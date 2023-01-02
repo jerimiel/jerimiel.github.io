@@ -236,13 +236,73 @@ root.mainloop()
     
     
   }
-
-projects.innerHTML = projects.innerHTML + emp
-
+  
+//
+let images = ['athena12.jpg', 'bahwor card.png', 'barcawh.jpg',
+ 'baw.jpg', 'bearlast.jpg', 'BULBRTFRTHH.jpg', 'burger2.jpg',
+  'chegue1r.jpg', 'dat guyshaded.jpg', 'dreeee.jpg', 'eago1.jpg', 
+  'ETHEREUM ACADEMIC.jpg', 'final.jpg', 'harl.jpg', 'hdfjhfposter2 (3).jpg', 
+  'hyu (2).jpg', 'jblads (2).jpg', 'jokermon.jpg', 'liony.jpg', 'logo molo 123.png',
+ 'moi5.jpg', 'ojierou.jpg', 'samcorrectedbrick.jpg', 'tiger.jpg', 'victor2.jpg', 'WER (2).jpg', 'worly.jpg']
+let ims = ``
+let dir = 'images/image-js/graphics/'
+for(let i=0;i<images.length;i++){
+    ims = ims + `<img src="${dir+images[i]}" class="graph-ims" alt="image" onclick=myFunc(this)>`
+}
+let graphics = `<h1>Graphics</h1>
+<div id="main">
+<div id=close-btn onclick=closeim()>X</div>
+<img id="container">
+</div>
+<div id='graphics'>${ims}<div/>`
+//
+//projects.innerHTML = projects.innerHTML + emp + graphics
 ans = ``
 for(let x=0;x<header.length;x+=1){
     ans = ans + `
         <li><a href=#${outerId[x]}>${header[x]}</a></li>
     `
 }
-list.innerHTML = `<h3 id="proj-li">Available Projects</h3><ol>${ans}</ol>`
+list.innerHTML = `<ol>${ans}</ol>`
+
+function myFunc(imgs){
+    let close = document.getElementById("close-btn")
+    let container = document.getElementById("container")
+    container.src = imgs.src
+    close.style.display = "block"
+}
+function myFuncAu(imgs){
+    let close_ = document.getElementById("close-btnAu")
+    let container_ = document.getElementById("containerAu")
+    container_.src = imgs.src
+    container_.style.display="block"
+    close_.style.display = "block"
+}
+function closeim(){
+    let close = document.getElementById("close-btn")
+    let container = document.getElementById("container")
+    container.src = ''
+    close.style.display = "none"
+}
+function closeimAu(){
+    let close_ = document.getElementById("close-btnAu")
+    let container_ = document.getElementById("containerAu")
+    container_.style.display='none'
+    close_.style.display = "none"
+}
+//
+let cad = ['biker.png', 'carfine.jpg', 'edibon.png',
+ 'free energee  remix - Copy.jpg', 'rickshaw3-Temp0006.png',
+  'Screenshot (349).png', 'shockabsorber.jpg', 'supercar.jpg']
+  let csd = ``
+  let dir2 = 'images/image-js/CAD/'
+  for(let i=0;i<cad.length;i++){
+    csd = csd + `<img src="${dir2+cad[i]}" class="graph-ims" alt="image" onclick=myFuncAu(this)>`
+}
+let cadPics = `<h1>AutoCad</h1>
+<div id="main">
+<div id=close-btnAu onclick=closeimAu()>X</div>
+<img id="containerAu">
+</div>
+<div id='CAD'>${csd}<div/>`
+projects.innerHTML = projects.innerHTML + emp + graphics + cadPics

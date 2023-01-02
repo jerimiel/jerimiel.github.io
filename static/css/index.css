@@ -35,26 +35,39 @@ body{
     letter-spacing: 0.1pc;
 }
 #top_nav{
+    width:100%;
+    position: fixed;
+    top:5%;
+    left:0%;
     text-align: center;
-    position: ;
 }
 #top_nav button{
     background-color: transparent;
     border-color: transparent;
     margin-left: 3%;
     margin-right: 3%;
-    margin-top: 2%;
-    
+    width:10%;
+}
+#top_nav button:active{
+    box-shadow: none;
+    box-shadow:0.0pc -0.05pc 0.09pc black;
 }
 #top_nav button a{
     text-decoration: none;
     color: white;
     font-family: monospace;
     font-size: 110%;
+    
+}
+#top_nav button a:active{
+    color: goldenrod;
+}
+#top_nav button a:hover{
+    color: goldenrod;
 }
 #proj-a{
     position: absolute;
-    top:80%;
+    top:90%;
     left:5%;
     width:20%;
     background-color: transparent;
@@ -64,6 +77,7 @@ body{
     color:white;
     font-family: monospace;
     height:5%;
+    font-size: 70%;
     border-radius: 30px;
     text-shadow:-0.2pc -0.1pc 0.2pc black;
 }
@@ -84,16 +98,89 @@ body{
     text-shadow:-0.2pc -0.1pc 0.2pc black;
 }
 /*Resume*/
-#resume{
+#packets{
     position: absolute;
     top:110%;
     left:5%;
+    right:5%;
+    width:90%;
 }
-#resume h1{
+#packets h1{
     color:white;
     font-family: system-ui;
 }
-#resume h2{
+#packets h2{
     color: white;
     font-family: system-ui;
+}
+.top-btns{
+    background-color: transparent;
+    margin-bottom: 2%;
+    width:20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: system-ui;
+    color: white;
+    border:none;
+    box-shadow:0.2pc 0.1pc 0.1pc black;
+}
+/*.top-btns:active{
+    box-shadow:none;
+    transform: translateY(0.2pc);
+    color: goldenrod;
+}
+#res:hover{
+    color: goldenrod;
+}*/
+#sections{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#sections div{
+    width:40%;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0pc 0pc 5px 0.09pc black;
+    margin-bottom: 1%;
+  }
+
+  #sections div p{
+    color:white;
+    font-family: monospace;
+    font-size: 150%;
+    word-break: break-all;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-align: justify;
+  }
+  #sections div a{
+    color:goldenrod;
+    margin-top: 1%;
+    text-decoration:underline dotted 0.5px goldenrod ;
+  }
+ #sections #two{
+    display: flex;
+    flex-direction: column;
+ }
+
+ #sections #two div{
+    box-shadow: none;
+ }
+@media screen and (max-width:600px) {
+    #sections{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      #sections div{
+        width:100%;
+    }
 }
