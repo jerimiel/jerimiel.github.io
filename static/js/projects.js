@@ -249,7 +249,7 @@ let dir = 'images/image-js/graphics/'
 for(let i=0;i<images.length;i++){
     ims = ims + `<img src="${dir+images[i]}" class="graph-ims" alt="image" onclick=myFunc(this)>`
 }
-let graphics = `<h1>Graphics</h1>
+let graphics = `<h1 id='graph-c'>Graphics</h1>
 <div id="main">
 <div id=close-btn onclick=closeim()>X</div>
 <img id="container">
@@ -299,7 +299,7 @@ let cad = ['biker.png', 'carfine.jpg', 'edibon.png',
   for(let i=0;i<cad.length;i++){
     csd = csd + `<img src="${dir2+cad[i]}" class="graph-ims" alt="image" onclick=myFuncAu(this)>`
 }
-let cadPics = `<h1>AutoCad</h1>
+let cadPics = `<h1 id='auto-c'>AutoCad</h1>
 <div id="main">
 <div id=close-btnAu onclick=closeimAu()>X</div>
 <img id="containerAu">
