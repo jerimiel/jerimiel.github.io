@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Pizza heaven survey form</h1>
+    <p id="description">Help us improve our pizza with this survey</p>
+    <form id="survey-form" action="" method="post">
+    <fieldset>
+      <label for="name" id="name-label">Name <input type="text" id="name" name="full-name" required placeholder="fullname" /><label>
+        <label for="email" id="email-label">Email <input type="email" id="email" name="email" required placeholder="email"/></label>
+        <label for="number" id="number-label">Age <input type="number" id="number" name="age" max=110 min=18 placeholder="age"/></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown"> How was the pizza
+      <select id="dropdown">
+        <option value=""> (Pick an option) </option>
+        <option value="1"> Excellent </option>
+        <option value="2"> Very good </option>
+        <option value="3"> Good </option>
+        <option value="4"> Fair </option>
+        <option value="5"> Poor </option>
+        <option value="6"> Bad </option>
+      </select>
+      </label>
+      <p>How likely are you to recommend us? </p>
+      <label><input type="radio" name="recommend" value=1> Most definitely</label>
+      <label><input type="radio" name="recommend" value=2> Probably</label>
+      <label><input type="radio" name="recommend" value=3> Not a chance</label>
+    </fieldset>
+    <fieldset>
+      <p>What would you like to see improved? </p>
+      <label for="toppings"><input type="checkbox" id="toppings" value="topping"/> Pizza toppings</label>
+      <label for="sauce"><input type="checkbox" id="sauce" value="sauce"/> Sauce</label>
+      <label for="texture"><input type="checkbox" id="texture" value="texture"/> Texture</label>
+      <label for="size"><input type="checkbox" id="size" value="size"/> Size</label>
+      <label for="comments"> Other comments: <textarea placeholder="It's delicious but..." rows="3" cols="30"></textarea></label>
+
+    </fieldset>
+    <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>

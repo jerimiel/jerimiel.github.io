@@ -1,0 +1,261 @@
+:root{
+    --main-color: rgb(8, 231, 194);
+    --secondary-color: rgb(204, 214, 246);
+    --shadow-color: red;
+    --background-color: rgb(10, 25, 47);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: flex-end;
+    height: 12vh;
+    box-shadow: 0 5px 10px rgb(5, 13, 26);
+    background-color: var(--background-color);
+    opacity: 90%;
+}
+.logo{
+    position: relative;
+    width: 10%;
+    top: 2%;
+}
+nav{
+    position: relative;
+    bottom: 32%;
+    margin-right: 25px;
+    display: flex;
+    column-gap: 8vw;
+}
+#navbar a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+#navbar a:hover{
+    color: var(--secondary-color);
+}
+#navbar a:hover::after{
+    content:"_";
+    animation: blink 0.5s infinite linear;
+    font-weight: bold;
+}
+#welcome-section,#about,#contact,#projects{
+    height: 100vh;
+    padding-top: 40vh;
+    padding-left: 30vh;
+    padding-right: 5vh;
+}
+.first,.second,.third{
+    color: var(--main-color);
+}
+
+.second{
+    font-size: 5rem;
+    word-spacing: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.third,.slash,.first{
+    font-family: monospace, Helvetica;
+    display: inline;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+.slash{
+    color: var(--secondary-color);
+}
+/*
+.box{
+    border-left: 2px solid var(--main-color);
+    padding-left: 2%;
+}
+*/
+.name{
+    color: var(--secondary-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-shadow: 2px 2px var(--shadow-color);
+}
+.name:hover{
+    color: var(--shadow-color);
+    text-shadow: 2px 2px var(--secondary-color);
+}
+.icons{
+    display: grid;
+    width: 2vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    border-radius: 10px;
+    position: fixed;
+    left: 1vw;
+    top: 40vh;
+    row-gap: 10vh;
+}
+.icons img{
+    width: 70%;
+    min-width: 14px;
+}
+
+.bound{
+   width: 50%; 
+   
+   padding-right: 4vh;
+   
+}
+.intro.second{
+    color: var(--secondary-color);
+}
+.intro{
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px var(--shadow-color);
+}
+.intro-text{
+    text-align: justify;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+#mail{
+    width: 10vw;
+    padding: 1.2vh 1vw;
+    margin: 8vh auto;
+    position: relative;
+    left: 30%;
+    color: var(--main-color);
+    background-color: transparent;
+    box-shadow: 2px 2px var(--shadow-color);
+    border: none;
+    font-weight: bold;
+}
+#mail:hover{
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+#mail:hover::after{
+    color: var(--background-color);
+    content: "_";
+    animation: blink 0.5s infinite linear;
+    font-weight: bold;
+}
+#mail:active{
+    box-shadow: 0px 0px var(--shadow-color);
+    border-top: 2px solid var(--shadow-color);
+    border-left: solid var(--shadow-color);
+}
+@media (max-width: 700px){
+    .logo{
+        opacity: 0%;
+    }
+}
+.proj-img{
+    width: 20%;
+}
+#projects{
+    padding-top: 20vh;
+}
+
+.proj{
+    display: flex;
+    column-gap: 2vw;
+    margin-left: 10vw;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    border-radius: 2vh;
+    opacity: 80%;
+}
+.proj:hover{
+    opacity: 100%;
+    background-color: rgb(30, 45, 67);
+}
+.proj-img:hover{
+    width: 20%;
+    animation: enlarge 0.2s 1 ease-in forwards;  
+}
+
+.description{
+    color: var(--secondary-color);
+    font-family: monospace;
+    font-size: 1.2em;
+    width: 40%;
+}
+.description:hover{
+    color: var(--main-color);
+}
+.targ-proj{
+    text-decoration: none;
+}
+@keyframes enlarge{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+#about{
+    display: flex;
+}
+.intro-text{
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+.my-img{
+    height: 50%;
+    display: inline-block;
+}
+#resume{
+    padding-top: 20vh;
+    padding-left: 30vh;
+    padding-right: 5vh;
+    width: 70%;
+}
+.separator{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.below{
+    color: var(--secondary-color);
+    margin-top: 0;
+    padding-top: 0;
+}
+#resume h3,h5{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#resume ul{
+    color: var(--secondary-color);
+}
+
+h5 a{
+    color: white;
+    text-decoration: none;
+}

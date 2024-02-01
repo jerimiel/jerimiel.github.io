@@ -1,0 +1,203 @@
+:root{
+    --main-color: rgb(12, 12, 12);
+    --gloss-color: #4e0684;
+    --text-color: white;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif, Arial;
+    background-color: var(--gloss-color);
+}
+header{
+    background-color: rgba(12,12,12,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    box-shadow: 2px 2px 8px var(--gloss-color);
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.logo-text{
+    color: var(--gloss-color);
+    font-size: 2.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0.5px 0.5px 1px var(--gloss-color);
+}
+.logo{
+    width: 10%;
+}
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 5vw;
+}
+.navbar a:hover{
+    color: black;
+}
+.navbar a:active{
+    color: var(--gloss-color);
+}
+#about{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+}
+.text{
+    width: 80%;
+    
+    padding-left: 2vw;
+    /*
+    border: 2px solid gray;
+    background-color: var(--gloss-color);
+    box-shadow: 2px 4px 5px gray;
+    border-radius: 1vw;
+    */
+    margin-left: 8vw;
+    
+}
+.text h3,#products h3{
+    color: var(--text-color);
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.text .one,.text .two{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text-color);
+    text-justify: justify;
+    text-align: justify;
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.text .two{
+    color: var(--text-color);
+    font-size: 1em;
+    padding-bottom: 2vh;
+}
+.shoe-img{
+   margin-left: 70%;
+    width: 30%;
+    position: relative;
+    right: 1px;
+    min-width: 250px;
+    margin-top: -15vh;
+}
+#btn{
+    width: 8vw;
+    height: 7vh;
+    border: 1px solid var(--text-color);
+    border-radius:  0 2px 2px 0;
+    background-color: var(--gloss-color);
+    color: var(--text-color);
+}
+#btn:active{
+    color: black;
+    background-color: white;
+}
+#search{
+    width: 32vw;
+    height: 7vh;
+    border: 1px transparent;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+    row-gap: 2vw;
+}
+#products{
+    padding-top: 20vh;
+    margin: 5% auto;
+    padding-left: 2vw;
+}
+#product{
+    display: grid;
+    background-color: rgba(12, 12, 12, 0.5);
+}
+#product:hover{
+    background-color: rgba(12, 12, 12, 0.5);
+}
+#product img{
+    width: 30vw;
+}
+#product h4{
+    text-align: left;
+    padding-left: 5vw;
+    color: var(--text-color);
+}
+#products h3{
+    padding-left: 1vw;
+}
+#contact{
+    padding-left: 5vw;
+    margin-bottom: 5vw;
+    color: var(--text-color);
+    height: 100vh;
+    padding-top: 20vh;
+    
+}
+#contact form label{
+    display: grid;
+    color: var(--text-color);
+}
+#contact form{
+    display: grid;
+    width: 40vw;
+    border: 2px solid var(--text-color);
+    padding: 4vh 8vh;
+    min-width: 400px;
+    margin-bottom: 30vh;
+}
+#contact form input{
+    height: 4vw;
+    background-color: transparent;
+    border-bottom: 2px solid var(--text-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 2vh;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+
+#contact form textarea{
+    background-color: transparent;
+    border-bottom: 2px solid var(--text-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+#contact form input[type="submit"]{
+    background-color: var(--text-color);
+    margin-top: 8vh;
+    border: none;
+    color: var(--main-color);
+    border-radius: 2px;
+    height: 7vh;
+    font-size: 1.1em;
+}

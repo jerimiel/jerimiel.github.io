@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    font-size: 1em;
+    background-color: rgb(160,23,14);
+    color: white;
+  }
+  #survey-form{
+    width: 80%;
+    margin: 2em auto;
+  }
+  label{
+    display: block;
+  }
+  input, select{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1em;
+  }
+  input[type="radio"],input[type="checkbox"]{
+    width:unset;
+  }
+  #title{
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #description{
+    text-align: center;
+    margin-top: 0;
+  }
+  input{
+    margin: 10px 0;
+  }
+  textarea{
+    width: 100%;
+  
+  }
+  fieldset{
+    border-top: 2px solid rgb(180,80,80);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  input[type="submit"]{
+    color: white;
+    background-color: rgb(180,80,80);
+    border: none;
+  }
+  
