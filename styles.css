@@ -295,4 +295,8 @@ h5 a{
     #welcome-section{
         padding-right: 0;
     }
+    #welcome-section,#about,#contact,#projects,#resume{
+   
+        padding-left: 15vh;
+    }
 }
