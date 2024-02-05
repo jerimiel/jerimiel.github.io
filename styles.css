@@ -286,4 +286,7 @@ h5 a{
     .bound{
         width: 100%;
     }
+    header{
+        align-items: center;
+    }
 }
