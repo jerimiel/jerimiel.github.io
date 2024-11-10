@@ -195,10 +195,10 @@ nav{
     color: var(--secondary-color);
     font-family: monospace;
     font-size: 1.2em;
-    width: 40%;
+    width: 60%;
 }
 .description:hover{
-    color: var(--main-color);
+    /*color: var(--main-color);*/
 }
 .targ-proj{
     text-decoration: none;
@@ -252,6 +252,16 @@ nav{
     color: var(--secondary-color);
 }
 
+.here{
+    text-decoration: none;
+    color: blue;
+}
+
+.heading{
+    color: var(--main-color);
+    font-size: large; 
+}
+
 h5 a{
     color: white;
     text-decoration: none;
@@ -300,3 +310,4 @@ h5 a{
         padding-left: 15vh;
     }
 }
+
