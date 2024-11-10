@@ -18,7 +18,7 @@ header{
     height: 12vh;
     box-shadow: 0 5px 10px rgb(5, 13, 26);
     background-color: var(--background-color);
-    opacity: 80%;
+    /*opacity: 80%;*/
 }
 .logo{
     position: relative;
