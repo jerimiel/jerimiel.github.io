@@ -18,7 +18,7 @@ header{
     height: 12vh;
     box-shadow: 0 5px 10px rgb(5, 13, 26);
     background-color: var(--background-color);
-    opacity: 90%;
+    opacity: 80%;
 }
 .logo{
     position: relative;
@@ -184,7 +184,7 @@ nav{
     padding-left: 5vw;
     padding-top: 3vh;
     border-radius: 2vh;
-    opacity: 80%;
+    opacity: 100%;
 }
 .proj:hover{
     opacity: 100%;
@@ -197,9 +197,7 @@ nav{
     font-size: 1.2em;
     width: 60%;
 }
-.description:hover{
-    /*color: var(--main-color);*/
-}
+
 .targ-proj{
     text-decoration: none;
 }

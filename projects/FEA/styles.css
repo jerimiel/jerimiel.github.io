@@ -1,0 +1,48 @@
+html{
+    box-sizing: border-box;
+  }
+  *{
+    box-sizing: inherit;
+  }
+  body{
+    margin-top: 0;
+    color: rgb(77, 78, 83);
+    font-family: cambria;
+  }
+  #navbar{
+    position: fixed;
+    height: 100%;
+    max-width: 250px;
+    min-width: 250px;
+    overflow-y: scroll;
+  }
+  #main-doc{
+    width: 70%;
+    position: relative;
+    left: 300px;
+  }
+  header{
+    margin-top: 0;
+    color: black;
+    padding-top: 3px;
+    font-size: 1.5em
+  }
+  #navbar a{
+    text-decoration: none;
+    color: rgb(77, 78, 83);
+    padding-left: 10px;
+  }
+  .divider{
+    border-bottom: 1px solid rgb(77, 78, 83);
+    height: 1px;
+    margin: 10px 0;
+  }
+  @media (max-width: 900px)
+  {
+    #navbar{
+      width: 20%;
+    }
+    #main-doc{
+      width: 70%;
+    }
+  }
