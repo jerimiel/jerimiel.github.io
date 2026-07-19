@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Torque to Speed | Victor Apeh</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<section id="blog-post">
+    <h1 class="second">From Torque to Speed</h1>
+    <p class="third">Modeling a Self-Balancing Robot</p>
+
+    <p class="blog-body">
+        One of the key challenges in controlling a self-balancing robot is understanding how the control input — motor torque — 
+        translates into motion. While many implementations treat velocity as the input, the physical system is fundamentally driven 
+        by torque. This post derives the relationship between torque and angular velocity, and discusses how it can be obtained 
+        analytically and through system identification.
+    </p>
+
+    <h3 class="intro second">1. Problem Statement</h3>
+    <p class="blog-body">
+        For a two-wheeled balancing robot, the motors apply torque to the wheels. However, most control strategies operate in terms 
+        of angular velocity or linear velocity. This raises an important question:
+        <br><br>
+        <b>How do we go from torque to angular speed?</b>
+    </p>
+
+    <h3 class="intro second">2. Physical Intuition</h3>
+    <p class="blog-body">
+        Torque does not directly produce velocity — it produces angular acceleration. The relationship is governed by Newton’s second law 
+        for rotation:
+    </p>
+
+    <p class="equation">τ = J · α</p>
+
+    <p class="blog-body">
+        where τ is torque, J is the moment of inertia, and α is angular acceleration. To obtain angular velocity, we integrate:
+    </p>
+
+    <p class="equation">ω = ∫ α dt</p>
+
+    <p class="blog-body">
+        This already suggests that the system has inherent dynamics — it is not an instantaneous mapping.
+    </p>
+
+    <h3 class="intro second">3. Equivalent Inertia (J<sub>eq</sub>)</h3>
+    <p class="blog-body">
+        In a self-balancing robot, the motor does not only accelerate the wheel — it also affects the body of the robot. 
+        Therefore, we define an equivalent inertia:
+    </p>
+
+    <p class="equation">J<sub>eq</sub> = J<sub>w</sub> + m<sub>b</sub>l²</p>
+
+    <p class="blog-body">
+        where:
+        <br>J<sub>w</sub> = wheel inertia  
+        <br>m<sub>b</sub> = body mass  
+        <br>l = distance from wheel axis to center of mass  
+    </p>
+
+    <p class="blog-body">
+        This approximation captures the coupling between translational and rotational dynamics.
+    </p>
+
+    <h3 class="intro second">4. From Torque to Angular Velocity</h3>
+    <p class="blog-body">
+        Substituting the equivalent inertia into the dynamics:
+    </p>
+
+    <p class="equation">τ = J<sub>eq</sub> · α</p>
+
+    <p class="blog-body">
+        gives:
+    </p>
+
+    <p class="equation">α = τ / J<sub>eq</sub></p>
+
+    <p class="blog-body">
+        Integrating:
+    </p>
+
+    <p class="equation">ω(t) = ∫ (τ / J<sub>eq</sub>) dt</p>
+
+    <p class="blog-body">
+        In discrete-time control systems, this becomes:
+    </p>
+
+    <p class="equation">ω[k+1] = ω[k] + (τ[k] / J<sub>eq</sub>) · Δt</p>
+
+    <p class="blog-body">
+        This is the fundamental relationship used when converting torque commands into velocity updates in simulation or control.
+    </p>
+
+    <h3 class="intro second">5. Practical Reality: Unknown Dynamics</h3>
+    <p class="blog-body">
+        In practice, J<sub>eq</sub> is rarely known accurately. Additional effects include:
+        <ul>
+            <li>Motor dynamics</li>
+            <li>Friction and slip</li>
+            <li>Back EMF</li>
+            <li>Load disturbances</li>
+        </ul>
+    </p>
+
+    <p class="blog-body">
+        Because of this, a purely analytical model often deviates from reality.
+    </p>
+
+    <h3 class="intro second">6. System Identification Approach</h3>
+    <p class="blog-body">
+        Instead of deriving the full physics, we can experimentally determine the relationship between torque and velocity.
+    </p>
+
+    <p class="blog-body">
+        A simple approach:
+        <ul>
+            <li>Apply known torque inputs</li>
+            <li>Measure resulting angular velocity</li>
+            <li>Fit a dynamic model</li>
+        </ul>
+    </p>
+
+    <p class="blog-body">
+        This often results in a first-order system:
+    </p>
+
+    <p class="equation">ω(s) / τ(s) = K / (Js + b)</p>
+
+    <p class="blog-body">
+        where b represents damping and K captures motor constants.
+    </p>
+
+    <h3 class="intro second">7. Key Insight</h3>
+    <p class="blog-body">
+        The most important takeaway is this:
+        <br><br>
+        <b>Torque controls acceleration, not velocity.</b>
+        <br><br>
+        Any controller that outputs velocity is implicitly relying on an internal model — whether explicit or learned — 
+        that converts that velocity into torque.
+    </p>
+
+    <p class="blog-body">
+        Understanding this relationship is crucial when designing controllers such as PID, LQR, or Model Predictive Control, 
+        especially on embedded systems where computational and sensing resources are limited.
+    </p>
+
+</section>
+
+</body>
+</html>

@@ -16,6 +16,7 @@
             <a href="#about">About</a>
             <a href="#resume">Resume</a>
             <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -65,8 +66,6 @@
             <span class="separator"><h5 class="first">Landmark University</h5><h5 class="first">2016 - 2021</h5></span>
             <h5 class="below">Bachelor of Engineering - Mechanical Engineering</h5>
             <ul>
-                <li> Worked on the design and construction of a free energy generator by harnessing the kinetic energy
-                     stored in a flywheel as my final project.</li>
                 <li>Elected to vice academic director for Landmark University Mechanical Engineering Students 
                     Association in 2020/2021 where I organized and carried out tutorials to help students of the
                      department. </li>
@@ -104,6 +103,15 @@
                     solutions.  </li>
                 <li> Worked closely with qualified mechanical engineers to understand typical issues and build solid 
                     understanding of maintenance and repair approaches relating to automobiles.</li> 
+            </ul>
+            <span class="separator"><h5 class="first">Research Intern</h5><h5 class="first">2025 - 2026</h5></span>
+            <h5 class="below">Ashesi University</h5>
+            <ul>
+                <li>Assisting on an assistive differential drive robot project.</li>
+                <ul class="Explanation">
+                        Handled the setup of the robot brain (Jetson Orin)
+                </ul>
+                <li>Managed a research cluster.</li>
             </ul>
             <p></p>
 
@@ -163,9 +171,142 @@
         </div>
     </section>
 
-
     <section id="projects">
         <h3 class="intro second">Projects</h3>
+
+        <img class="proj-img" src="projects/bala2/proj.png" alt="Bala2 Self-Balancing Robot">
+
+        <div class="proj documentation">
+
+            <p class="description">
+
+                <b class="heading">
+                    Experimental Platform for Advanced Control of a Two-Wheel Self-Balancing Robot
+                </b>
+
+                This project investigates the implementation and experimental evaluation of modern
+                control algorithms on the M5Stack Bala2 Fire self-balancing robot. Rather than
+                treating the robot as a finished product, it serves as a research platform for
+                studying balance control, state estimation, system identification, and real-time
+                embedded control.
+
+                <br><br>
+
+                The platform has been used to implement and compare multiple control strategies,
+                including classical PID control, Linear Quadratic Regulator (LQR), and
+                Data-enabled Predictive Control (DeePC). Current work focuses on improving
+                model accuracy through system identification and investigating the transition
+                from model-based control to data-driven control methods.
+
+                <br><br>
+
+                The project combines embedded C++, IMU sensor fusion, motor control,
+                real-time estimation, and experimental validation, providing a practical
+                framework for developing advanced control algorithms on embedded robotic
+                systems.
+
+                <br><br>
+
+                <b>Technologies:</b>
+                Embedded C++, M5Stack Bala2 Fire, IMU Sensor Fusion, PID, LQR, DeePC,
+                System Identification, MATLAB, Control Systems.
+
+                <br><br>
+
+                Source code available
+                <a class="here"
+                href="https://github.com/jerimiel/bala2_fire_model_and_control/tree/master"
+                target="_blank">
+                here
+                </a>.
+
+            </p>
+
+        </div>
+
+    </a>
+
+
+    <!-- Autonomous Package Delivery Robot -->
+
+<div class="project-card">
+
+    <img class="proj-img" 
+         src="projects/linexpress/robolicious_image.png" 
+         alt="Autonomous Package Delivery Robot">
+
+    <div class="proj documentation">
+
+        <div class="description">
+
+            <b class="heading">
+                Autonomous Package Delivery Robot with Active Load Stabilization
+            </b>
+
+            <br><br>
+
+            Developed as part of the Applied Systems Engineering course, this project
+            involved the design and implementation of an autonomous mobile robot capable
+            of collecting and delivering packages while maintaining stability over
+            uneven terrain.
+
+            <br><br>
+
+            The challenge required the robot to autonomously navigate a predefined
+            environment, identify package locations using color markers, pick up
+            packages, transport them to their corresponding delivery locations, and
+            overcome obstacles while maintaining a stable payload.
+
+            <br><br>
+
+            The robot was developed as a complete mechatronic system combining
+            mechanical design, embedded programming, sensing, and control. The
+            mechanical structure was designed using CAD, while the software architecture
+            implemented autonomous navigation, line following, package detection,
+            manipulation, and task sequencing.
+
+            <br><br>
+
+            A major challenge was crossing elevated obstacles while keeping a ping-pong
+            ball balanced on the robot platform. An IMU-based gimbal stabilization
+            system was implemented to compensate for robot tilt and actively maintain
+            a horizontal platform.
+
+            <br><br>
+
+            <b>Autonomous System Components:</b>
+
+            <ul>
+                <li>Line following using a sensor array</li>
+                <li>Color-based package identification</li>
+                <li>Finite state machine architecture for mission execution</li>
+                <li>Motor control using encoder feedback</li>
+                <li>Servo-based package pickup and delivery mechanism</li>
+                <li>IMU-based gimbal stabilization control</li>
+            </ul>
+
+            <br>
+
+            The project required collaboration across mechanical design, electronics,
+            and software development. My contributions focused on embedded programming,
+            robot control, sensor integration, and autonomous behavior implementation.
+
+            <br><br>
+
+            <b>Technologies:</b>
+
+            Embedded C++, STM32 Nucleo, Mbed OS, DC Motors, Encoders, IMU Sensor Fusion,
+            Line Following, Color Detection, Servo Control, CAD Design, Autonomous Robotics.
+
+            <br><br>
+
+            <b>Team:</b> 5 members
+
+        </div>
+
+    </div>
+
+</div>
         
         <a class="targ-proj" target="_blank">
             <img class="proj-img" src="projects/spirit_level/proj.png" alt="project-image">
@@ -211,6 +352,65 @@
 
         
     </section>
+
+
+
+
+<!-- This part is me testing vibe coding for web design-->
+    <section id="blog">
+    <h3 class="intro second">Blog</h3>
+    <p class="third">Thoughts, derivations, and experiments in control systems, robotics, and embedded intelligence.</p>
+
+    <div class="blog-container">
+
+        <div class="blog-card">
+            <h4 class="blog-title">From Torque to Speed: Modeling a Self-Balancing Robot</h4>
+            <p class="blog-date">March 2026</p>
+            <p class="blog-summary">
+                A deep dive into how motor torque translates into angular velocity in a two-wheel balancing robot.
+                Includes derivation of equivalent inertia and system identification insights.
+            </p>
+            <a href="blog/torque-to-speed.html" class="read-more">Read More →</a>
+        </div>
+
+        <div class="blog-card">
+            <h4 class="blog-title">System Identification for Embedded Control Systems</h4>
+            <p class="blog-date">March 2026</p>
+            <p class="blog-summary">
+                How to extract dynamic models from real hardware using minimal sensors. Focused on low-cost robotics platforms.
+            </p>
+            <a href="blog/sysid.html" class="read-more">Read More →</a>
+        </div>
+
+        <div class="blog-card">
+            <h4 class="blog-title">Why MPC is Hard on Microcontrollers (and how to fix it)</h4>
+            <p class="blog-date">Coming Soon</p>
+            <p class="blog-summary">
+                Exploring computational bottlenecks of Model Predictive Control and strategies for real-time embedded implementation.
+            </p>
+            <a href="#" class="read-more">Coming Soon</a>
+        </div>
+
+        <div class="blog-card">
+            <h4 class="blog-title">Stepper Motors vs DC Motors in Balancing Robots</h4>
+            <p class="blog-date">Coming Soon</p>
+            <p class="blog-summary">
+                A comparison of control strategies, limitations, and modeling differences between stepper-driven and DC-driven robots.
+            </p>
+            <a href="#" class="read-more">Coming Soon</a>
+        </div>
+
+    </div>
+</section>
+<!-- This part is me testing vibe coding for web design-->
+
+
+
+
+
+
+
+
     <section id="contact">
         <h3 class="intro second">Contact</h3>
         <p class="third">Feel free to send a mail.</p><br>
