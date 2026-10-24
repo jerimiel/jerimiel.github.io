@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Prediction on a Microcontroller | Victor Apeh</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" href="../../logo6.png">
+</head>
+<body>
+<main class="project-page">
+    <a class="back-link" href="../../index.html#projects">&larr; All projects</a>
+
+    <h1>Rainfall Prediction on a Microcontroller</h1>
+    <p class="project-meta">Embedded machine learning</p>
+    <div class="chips"><span>ESP8266</span><span>DHT22</span><span>ThingSpeak</span><span>Machine learning</span><span>Python</span></div>
+
+    <img class="project-hero" src="proj.png" alt="Rainfall Prediction on a Microcontroller">
+
+    <h2>Overview</h2>
+    <p>The aim was to let a microcontroller make decisions on its own when rain is coming, such as alerting the people in a home
+    or driving servos to close the windows.</p>
+
+    <h2>How it works</h2>
+    <ul>
+        <li>Collected temperature and humidity readings over time with a DHT22 sensor and an ESP8266, logged to ThingSpeak</li>
+        <li>Cleaned the data and trained a classification model with an F1 score of 96.6</li>
+        <li>Deployed the trained model on an ESP8266 Wemos D1 so predictions run on the device itself</li>
+    </ul>
+
+    <h2>Code</h2>
+    <p><a href="https://github.com/jerimiel/esp8266_rain_prediction" target="_blank">github.com/jerimiel/esp8266_rain_prediction</a></p>
+</main>
+</body>
+</html>

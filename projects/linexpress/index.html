@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Package Delivery Robot | Victor Apeh</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" href="../../logo6.png">
+</head>
+<body>
+<main class="project-page">
+    <a class="back-link" href="../../index.html#projects">&larr; All projects</a>
+
+    <h1>Autonomous Package Delivery Robot</h1>
+    <p class="project-meta">Applied Systems Engineering course &middot; Team of 5 &middot; July 2026</p>
+    <div class="chips"><span>Fusion 360</span><span>3D printing</span><span>Embedded C++</span><span>STM32 Nucleo</span><span>Mbed OS</span><span>IMU sensor fusion</span></div>
+
+    <img class="project-hero" src="robot_photo.jpg" alt="Autonomous Package Delivery Robot">
+
+    <h2>The challenge</h2>
+    <p>Build an autonomous mobile robot that navigates a predefined course, identifies package locations from colour markers,
+    picks up packages, delivers them to the matching stations, and crosses an elevated obstacle while keeping a ping-pong ball
+    balanced on its platform.</p>
+
+    <h2>My role</h2>
+    <p>I designed and 3D printed the robotic pickup arm and wrote the code that handles package pickup and placement. I also
+    worked on the robot's embedded programming, control, sensor integration and autonomous behaviour.</p>
+
+    <h2>Pickup arm</h2>
+    <p>The arm is a 360&deg; turret on a rotating base, driven by a Futaba S3001 servo, with a rack-and-pinion lift: a second
+    servo turns a spur gear along a printed rack to raise and lower the package pickup. I sized the gear ratio, calibrated the
+    servo, and fixed a start-up fault where the arm snapped to zero when the servo was enabled.</p>
+
+    <div class="project-gallery">
+        <figure>
+            <img src="arm_cad.png" alt="Pickup arm in Fusion 360: turret base, rack-and-pinion lift and pickup">
+            <figcaption>Pickup arm in Fusion 360: turret base, rack-and-pinion lift and pickup</figcaption>
+        </figure>
+        <figure>
+            <img src="robot_cad_iso.png" alt="Full robot assembly in Fusion 360">
+            <figcaption>Full robot assembly in Fusion 360</figcaption>
+        </figure>
+    </div>
+
+    <h2>How the robot works</h2>
+    <ul>
+        <li>Line following using a sensor array</li>
+        <li>Colour-based package and station identification</li>
+        <li>A finite state machine runs the mission: initialise, follow line, turn, stop at station, pick up, drop off, finish</li>
+        <li>DC motor control with encoder feedback</li>
+        <li>An IMU-based gimbal keeps the ball platform level while the robot climbs and crosses the obstacle</li>
+    </ul>
+
+    <div class="project-gallery">
+        <figure>
+            <img src="robot_annotated.jpg" alt="Annotated model of the robot and its main components">
+            <figcaption>Annotated model of the robot and its main components</figcaption>
+        </figure>
+        <figure>
+            <img src="robot_cad_front.png" alt="Front view of the assembly">
+            <figcaption>Front view of the assembly</figcaption>
+        </figure>
+    </div>
+
+    <h2>Demo videos</h2>
+    <ul>
+        <li><a href="https://youtu.be/H2C6QsLAU_U" target="_blank">Autonomous package pickup and delivery</a></li>
+        <li><a href="https://youtu.be/OBNhIcVqQj4" target="_blank">Active load stabilisation while crossing an obstacle</a></li>
+    </ul>
+
+    <h2>Code</h2>
+    <p><a href="https://github.com/jerimiel/autonomous_robot" target="_blank">github.com/jerimiel/autonomous_robot</a></p>
+</main>
+</body>
+</html>

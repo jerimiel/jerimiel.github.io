@@ -16,7 +16,6 @@
             <a href="#about">About</a>
             <a href="#resume">Resume</a>
             <a href="#projects">Projects</a>
-            <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -26,400 +25,189 @@
             <a href="https://twitter.com/Jesimiel999" target="_blank"><img src="icons/twitter-logo.svg" alt="twitter logo"></a>
             <a href="https://github.com/jerimiel" target="_blank"><img src="icons/github-logo.svg" alt="github logo"></a>
         </span>
-        <div class="box">
-            <p class="first">Hi</p>
-            <h1 class="second">I'm <span class="name">Victor Apeh</span>.</h1>
-            <p class="third">Mechatronics and Robotics Engineer</p>
-            <!--
-            <p class="slash">//</p>
-            <p class="third">Web Dev</p>
-            <p class="slash">//</p>
-            <p class="third">Data Scientist</p>
-            <p class="message"></p>
-            -->
+                <div class="hero-layout">
+            <div class="box hero">
+                <h1 class="hero-title">Hi, I'm <span class="name">Victor</span>.</h1>
+                <p class="hero-line">Mechanical engineer by training, mechatronics engineer by obsession. I sketch it in CAD, make it, and keep tinkering until the hardware does what the maths said it would.</p>
+                <div class="hero-actions">
+                    <a class="hero-btn hero-btn-primary" href="#projects">View projects</a>
+                    <a class="hero-btn" href="#resume">Resume</a>
+                </div>
+            </div>
+            <div class="hero-collage">
+                <a href="projects/linexpress/index.html"><img src="projects/linexpress/robot_photo.jpg" alt="Delivery robot with 3D-printed pickup arm"></a>
+                <a href="projects/air_quality/index.html"><img class="cad" src="projects/air_quality/enclosure_cad.png" alt="Air-quality monitor enclosure CAD model"></a>
+                <a href="projects/plant_mate/index.html"><img class="cad" src="projects/plant_mate/metering_assembly.png" alt="Plant Mate seed metering mechanism CAD model"></a>
+                <a href="projects/air_quality/index.html"><img src="projects/air_quality/enclosure_print_top.jpg" alt="3D-printed air-quality monitor enclosure"></a>
+            </div>
         </div>
     </section> 
-    <section id="about">
+        <section id="about">
         <div class="bound">
             <h3 class="intro second">About me</h3>
-        <p class="intro-text third">Hello, my name is Victor Apeh. I am a Mechatronics and Robotics
-            masters student. I enjoy applying 
-            technology and innovation to problems and my interests are in robotics, automation and
-             assistive technology.
-        </p>
+            <p class="about-text">I started out in mechanical engineering at Landmark University, then did my M.Sc. in Mechatronics Engineering at Ashesi University and ETH Z&uuml;rich. Somewhere along the way, designing parts stopped being enough. I wanted them to move, sense and react.</p>
+            <p class="about-text">Most of my projects run the same loop: model it, design it in Fusion 360, print or build it, write the embedded code and controllers, then fix whatever the real hardware disagrees with. That loop has covered a 3D-printed robot pickup arm, a self-balancing robot and a sensor enclosure, and one much bigger machine: a 4,000 t/d cement kiln at Holcim Maroc, where I worked on its high-level control system.</p>
+            <p class="about-text">I'm happiest where mechanical design, robotics and control meet on real hardware. Away from the bench, you'll usually find me watching movies, especially old classics and science fiction.</p>
         </div>
-        <img src="Images/mine.png" alt="my-pic.jpg" class="my-img">
+        <img src="Images/mine.png" alt="Victor Apeh" class="my-img">
 
     </section>
-    <section id="resume">
-        <div id="education">
-            <h3 class="intro second">Education</h3>
-            <span class="separator"><h5 class="first">Eth Zurich</h5><h5 class="first">2024 - 2026</h5></span>
-            <h5 class="below">Master of Advanced Studies - Mechatronics, Robotics and Automation Engineering</h5>
+        <section id="resume">
+        <h3 class="intro second">Resume</h3>
 
-            <span class="separator"><h5 class="first">Ashesi University</h5><h5 class="first">2024 - 2026</h5></span>
-            <h5 class="below">Master of Science - Mechatronics, Robotics and Automation Engineering</h5>
+        <div class="cv-grid">
 
-            <span class="separator"><h5 class="first">UBA</h5><h5 class="first">2023</h5></span>
-            <h5 class="below">Graduate Management Accelerated Program</h5>
+            <div class="cv-block cv-wide">
+                <h4 class="cv-heading">Experience</h4>
 
-            <span class="separator"><h5 class="first">Landmark University</h5><h5 class="first">2016 - 2021</h5></span>
-            <h5 class="below">Bachelor of Engineering - Mechanical Engineering</h5>
-            <ul>
-                <li>Elected to vice academic director for Landmark University Mechanical Engineering Students 
-                    Association in 2020/2021 where I organized and carried out tutorials to help students of the
-                     department. </li>
-                <li>Awarded Best Graduating Student in the department of Mechanical Engineering 2020/2021 set.</li> 
-                <li>Used AutoCAD to design car parts and free energy generator for projects and assignments.</li>
-            </ul>
-            <p></p>
-        </div>
+                <div class="cv-item">
+                    <div class="cv-top"><span class="cv-title">Process Control Engineer &middot; Holcim Maroc</span><span class="cv-date">Aug 2026 &ndash; Oct 2026</span></div>
+                    <p class="cv-text">Kiln high-level control on a 4,000 t/d cement line in Bouskoura, Morocco: analysed why operators take manual control and developed a method to estimate alternative-fuel energy content from the controller&rsquo;s own fuel actions.</p>
+                </div>
 
-        <div id="experience">
-            <h3 class="intro second">Experience</h3>
+                <div class="cv-item">
+                    <div class="cv-top"><span class="cv-title">Research Intern &middot; Ashesi Robotics Lab</span><span class="cv-date">Aug 2025 &ndash; Jul 2026</span></div>
+                    <p class="cv-text">Set up the NVIDIA Jetson Orin &ldquo;robot brain&rdquo; of an assistive differential-drive robot, integrating LIDAR, camera and ultrasonic sensors, and built a Docker environment for ROS&nbsp;2 development.</p>
+                </div>
 
-            <span class="separator"><h5 class="first">Engineer (Youth service)</h5><h5 class="first">2022 - 2023</h5></span>
-            <h5 class="below">Nigerian Meteorological Agency</h5>
-            <ul>
-                <li>Maintained and serviced the mechanical systems.</li>
-                <li>Developed and prepared reports and recommendations for engineering problems. </li>
-                <li>Used python to write algorithm for wireless technology for meteorological data sharing research.</li> 
-            </ul>
+                <div class="cv-item">
+                    <div class="cv-top"><span class="cv-title">Engineer (National Service) &middot; Nigerian Meteorological Agency</span><span class="cv-date">Feb 2022 &ndash; Feb 2023</span></div>
+                    <p class="cv-text">Maintained the Doppler radar system and co-designed a wireless data-sharing algorithm that cut data loss by 60%.</p>
+                </div>
 
-            <span class="separator"><h5 class="first">Researcher</h5><h5 class="first">2020 - 2021</h5></span>
-            <h5 class="below">Landmark University</h5>
-            <ul>
-                <li>Designed and manufactured a free energy generator.</li>
-                <li>Carried out design calculations and CAD designs for free energy generator.</li>
-                <li>Co-authored a paper on the design project. </li>
-                <li>Implemented prior knowledge on engineering principles including pulley sizing and vibration 
-                    to solve problems regarding free energy generator project. </li> 
-            </ul>
+                <div class="cv-item">
+                    <div class="cv-top"><span class="cv-title">Engineering Intern &middot; Mobile House Limited</span><span class="cv-date">Feb 2020 &ndash; Aug 2020</span></div>
+                    <p class="cv-text">Diagnosed and repaired automotive mechanical, electrical and transmission systems.</p>
+                </div>
+            </div>
 
-            <span class="separator"><h5 class="first">Intern</h5><h5 class="first">2020</h5></span>
-            <h5 class="below">Mobile house limited</h5>
-            <ul>
-                <li>Developed, prepared and reviewed reports and studies to identify and recommend engineering 
-                    solutions.  </li>
-                <li> Worked closely with qualified mechanical engineers to understand typical issues and build solid 
-                    understanding of maintenance and repair approaches relating to automobiles.</li> 
-            </ul>
-            <span class="separator"><h5 class="first">Research Intern</h5><h5 class="first">2025 - 2026</h5></span>
-            <h5 class="below">Ashesi University</h5>
-            <ul>
-                <li>Assisting on an assistive differential drive robot project.</li>
-                <ul class="Explanation">
-                        Handled the setup of the robot brain (Jetson Orin)
+            <div class="cv-block">
+                <h4 class="cv-heading">Education</h4>
+
+                <div class="cv-item">
+                    <div class="cv-top"><span class="cv-title">Ashesi University / ETH Z&uuml;rich</span><span class="cv-date">2024 &ndash; 2026</span></div>
+                    <p class="cv-text">M.Sc. &amp; MAS, Mechatronics Engineering</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-top"><span class="cv-title">Landmark University</span><span class="cv-date">2016 &ndash; 2021</span></div>
+                    <p class="cv-text">B.Eng. Mechanical Engineering</p>
+                </div>
+
+                <h4 class="cv-heading">Honours</h4>
+                <ul class="cv-list">
+                    <li>Best Graduating Student, Mechanical Engineering, Landmark University (2020/21)</li>
+                    <li>Winner, Ashesi Center for Entrepreneurship Solar Mechatronics Competition (2025)</li>
                 </ul>
-                <li>Managed a research cluster.</li>
-            </ul>
-            <p></p>
+            </div>
 
-            
-        </div>
+            <div class="cv-block">
+                <h4 class="cv-heading">Skills</h4>
 
-        <div id="Certifications">
-            <h3 class="intro second">Certifications</h3>
+                <p class="chip-label">Design &amp; prototyping</p>
+                <div class="chips"><span>Fusion 360</span><span>AutoCAD</span><span>3D printing</span><span>KiCad PCB</span><span>Ansys Granta</span></div>
 
-            <span class="separator"><h5 class="first">UBA Graduate Management Accelerated Program certification</h5><h5 class="first">Oct 3, 2023</h5></span>
+                <p class="chip-label">Embedded</p>
+                <div class="chips"><span>C / C++</span><span>STM32</span><span>ESP32</span><span>MSP432</span><span>Mbed OS</span></div>
 
+                <p class="chip-label">Control &amp; analysis</p>
+                <div class="chips"><span>PID</span><span>LQR</span><span>System ID</span><span>MATLAB / Simulink</span><span>Python</span><span>FEA</span></div>
 
-            <span class="separator"><h5 class="first">Coursera Neural networks and deeplearning</h5><h5 class="first">Nov 2022</h5></span>
-            <h5 class="below"><a href="https://www.coursera.org/account/accomplishments/certificate/TNKVMYB45NW2" target="_blank">Certificate</a></h5>
+                <p class="chip-label">Robotics &amp; tools</p>
+                <div class="chips"><span>ROS 2</span><span>Docker</span><span>Jetson Orin</span><span>Sensor fusion</span><span>Linux</span><span>Git</span></div>
+            </div>
 
-            <span class="separator"><h5 class="first">Udacity ALX Data analyst program</h5><h5 class="first">Aug 2022</h5></span>
-            <h5 class="below"><a href="https://graduation.udacity.com/confirm/5Y7KNK7J" target="_blank">Certificate</a></h5>
+            <div class="cv-block cv-wide">
+                <h4 class="cv-heading">Certifications</h4>
+                <div class="chips chips-links">
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/TNKVMYB45NW2" target="_blank">Neural Networks &amp; Deep Learning &middot; Coursera</a>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/6WVRKNUZAYT5" target="_blank">Machine Learning &middot; Stanford / Coursera</a>
+                    <a href="https://graduation.udacity.com/confirm/5Y7KNK7J" target="_blank">Data Analyst &middot; Udacity ALX</a>
+                    <a href="https://www.freecodecamp.org/certification/ApehVictor/scientific-computing-with-python-v7" target="_blank">Scientific Computing with Python &middot; freeCodeCamp</a>
+                </div>
+            </div>
 
-            <span class="separator"><h5 class="first">Stanford University Machine Learning</h5><h5 class="first">July 2022</h5></span>
-            <h5 class="below"><a href="https://www.coursera.org/account/accomplishments/verify/6WVRKNUZAYT5" target="_blank">Certificate</a></h5>
-
-            <span class="separator"><h5 class="first">Udemy Machine learning</h5><h5 class="first">Jun 2022</h5></span>
-            <h5 class="below"><a href="https://www.udemy.com/certificate/UC-7c02f4c1-82b7-4548-9563-e004065a289a/" target="_blank">Certificate</a></h5>
-
-            <span class="separator"><h5 class="first">Freecodecamp Scientific computing</h5><h5 class="first">May 2022</h5></span>
-            <h5 class="below"><a href="https://www.freecodecamp.org/certification/ApehVictor/scientific-computing-with-python-v7" target="_blank">Certificate</a></h5>
-            <p></p>
-            <p></p>
-            
-        </div>
-
-        <div id="Skills">
-            <h3 class="intro second">Skills</h3>
-
-            <span class="separator"><h5 class="first">Python</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">Matlab</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">C programming</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">Machine Learning</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">Web Dev</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">Embedded Systems Programming</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">KICAD MCU design</h5><h5 class="first"></h5></span>
-
-            
-        </div>
-
-        <div id="Skills"></div>
-            <h3 class="intro second">Technologies</h3>
-
-            <span class="separator"><h5 class="first">Fusion360</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">Ansys Granta</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">Arduino IDE</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">STM32 CUBE IDE</h5><h5 class="first"></h5></span>
-            <span class="separator"><h5 class="first">KICAD</h5><h5 class="first"></h5></span>
-
-
-            
         </div>
     </section>
 
     <section id="projects">
         <h3 class="intro second">Projects</h3>
 
-        <img class="proj-img" src="projects/bala2/proj.png" alt="Bala2 Self-Balancing Robot">
+        <div class="project-grid">
 
-        <div class="proj documentation">
+            <a class="project-tile" href="projects/linexpress/index.html">
+                            <img src="projects/linexpress/robot_photo.jpg" alt="Autonomous package delivery robot with 3D-printed pickup arm">
+                <div class="tile-body">
+                    <h4>Autonomous Package Delivery Robot</h4>
+                    <p>Line-following robot with a 3D-printed pickup arm and an actively stabilised platform.</p>
+                    <div class="chips"><span>CAD</span><span>3D printing</span><span>STM32</span><span>Control</span></div>
+                    <span class="tile-link">View project &rarr;</span>
+                </div>
 
-            <p class="description">
+            </a>
 
-                <b class="heading">
-                    Experimental Platform for Advanced Control of a Two-Wheel Self-Balancing Robot
-                </b>
+                        <a class="project-tile" href="projects/plant_mate/index.html">
+                <img src="projects/plant_mate/metering_assembly.png" alt="Plant Mate seed metering mechanism CAD model">
+                <div class="tile-body">
+                    <h4>Plant Mate: Corn Planter</h4>
+                    <p>A hand planter for farmers in Malawi. I designed the seed metering and trigger mechanism.</p>
+                    <div class="chips"><span>User research</span><span>Fusion 360</span><span>Mechanism design</span></div>
+                    <span class="tile-link">View project &rarr;</span>
+                </div>
+            </a>
 
-                This project investigates the implementation and experimental evaluation of modern
-                control algorithms on the M5Stack Bala2 Fire self-balancing robot. Rather than
-                treating the robot as a finished product, it serves as a research platform for
-                studying balance control, state estimation, system identification, and real-time
-                embedded control.
+            <a class="project-tile" href="projects/air_quality/index.html">
+                <img src="projects/air_quality/enclosure_cad.png" alt="Air-quality monitor enclosure CAD model">
+                <div class="tile-body">
+                    <h4>Air-Quality Monitor Enclosure</h4>
+                    <p>A custom enclosure designed in Fusion 360 and 3D printed for an air-quality monitoring device.</p>
+                    <div class="chips"><span>Fusion 360</span><span>3D printing</span><span>Product design</span></div>
+                    <span class="tile-link">View project &rarr;</span>
+                </div>
+            </a>
 
-                <br><br>
+            <a class="project-tile" href="projects/bala2/index.html">
+                <img src="projects/bala2/proj.png" alt="Bala2 self-balancing robot">
+                <div class="tile-body">
+                    <h4>Self-Balancing Robot Control</h4>
+                    <p>Modelling, system identification and PID, LQR and DeePC control on a two-wheel robot.</p>
+                    <div class="chips"><span>Embedded C++</span><span>System ID</span><span>LQR</span></div>
+                    <span class="tile-link">View project &rarr;</span>
+                </div>
+            </a>
 
-                The platform has been used to implement and compare multiple control strategies,
-                including classical PID control, Linear Quadratic Regulator (LQR), and
-                Data-enabled Predictive Control (DeePC). Current work focuses on improving
-                model accuracy through system identification and investigating the transition
-                from model-based control to data-driven control methods.
+            <a class="project-tile" href="projects/spirit_level/index.html">
+                <img src="projects/spirit_level/proj.png" alt="Electronic spirit level">
+                <div class="tile-body">
+                    <h4>Electronic Spirit Level</h4>
+                    <p>A pocket-sized digital level built on the MSP432 with an accelerometer.</p>
+                    <div class="chips"><span>MSP432</span><span>Embedded C</span><span>Accelerometer</span></div>
+                    <span class="tile-link">View project &rarr;</span>
+                </div>
+            </a>
 
-                <br><br>
+            <a class="project-tile" href="projects/rain_pred/index.html">
+                <img src="projects/rain_pred/proj.png" alt="Rainfall prediction on a microcontroller">
+                <div class="tile-body">
+                    <h4>Rainfall Prediction on a Microcontroller</h4>
+                    <p>A model trained on local sensor data and deployed on an ESP8266 (F1 score 96.6).</p>
+                    <div class="chips"><span>ESP8266</span><span>Machine learning</span><span>IoT</span></div>
+                    <span class="tile-link">View project &rarr;</span>
+                </div>
+            </a>
 
-                The project combines embedded C++, IMU sensor fusion, motor control,
-                real-time estimation, and experimental validation, providing a practical
-                framework for developing advanced control algorithms on embedded robotic
-                systems.
-
-                <br><br>
-
-                <b>Technologies:</b>
-                Embedded C++, M5Stack Bala2 Fire, IMU Sensor Fusion, PID, LQR, DeePC,
-                System Identification, MATLAB, Control Systems.
-
-                <br><br>
-
-                Source code available
-                <a class="here"
-                href="https://github.com/jerimiel/bala2_fire_model_and_control/tree/master"
-                target="_blank">
-                here
-                </a>.
-
-            </p>
-
-        </div>
-
-    </a>
-
-
-    <!-- Autonomous Package Delivery Robot -->
-
-<div class="project-card">
-
-    <img class="proj-img" 
-         src="projects/linexpress/robolicious_image.png" 
-         alt="Autonomous Package Delivery Robot">
-
-    <div class="proj documentation">
-
-        <div class="description">
-
-            <b class="heading">
-                Autonomous Package Delivery Robot with Active Load Stabilization
-            </b>
-
-            <br><br>
-
-            Developed as part of the Applied Systems Engineering course, this project
-            involved the design and implementation of an autonomous mobile robot capable
-            of collecting and delivering packages while maintaining stability over
-            uneven terrain.
-
-            <br><br>
-
-            The challenge required the robot to autonomously navigate a predefined
-            environment, identify package locations using color markers, pick up
-            packages, transport them to their corresponding delivery locations, and
-            overcome obstacles while maintaining a stable payload.
-
-            <br><br>
-
-            The robot was developed as a complete mechatronic system combining
-            mechanical design, embedded programming, sensing, and control. The
-            mechanical structure was designed using CAD, while the software architecture
-            implemented autonomous navigation, line following, package detection,
-            manipulation, and task sequencing.
-
-            <br><br>
-
-            A major challenge was crossing elevated obstacles while keeping a ping-pong
-            ball balanced on the robot platform. An IMU-based gimbal stabilization
-            system was implemented to compensate for robot tilt and actively maintain
-            a horizontal platform.
-
-            <br><br>
-
-            <b>Autonomous System Components:</b>
-
-            <ul>
-                <li>Line following using a sensor array</li>
-                <li>Color-based package identification</li>
-                <li>Finite state machine architecture for mission execution</li>
-                <li>Motor control using encoder feedback</li>
-                <li>Servo-based package pickup and delivery mechanism</li>
-                <li>IMU-based gimbal stabilization control</li>
-            </ul>
-
-            <br>
-
-            The project required collaboration across mechanical design, electronics,
-            and software development. My contributions focused on embedded programming,
-            robot control, sensor integration, and autonomous behavior implementation.
-
-            <br><br>
-
-            <b>Technologies:</b>
-
-            Embedded C++, STM32 Nucleo, Mbed OS, DC Motors, Encoders, IMU Sensor Fusion,
-            Line Following, Color Detection, Servo Control, CAD Design, Autonomous Robotics.
-
-            <br><br>
-
-            <b>Demo Videos:</b>
-
-            <ul>
-                <li>
-                    Autonomous package pickup and delivery demonstration:
-                    <a href="https://youtu.be/H2C6QsLAU_U" target="_blank">Video</a>
-                </li>
-
-                <li>
-                    Active load stabilization using IMU-based gimbal while crossing an obstacle:
-                    <a href="https://youtu.be/OBNhIcVqQj4" target="_blank">Video</a>
-                </li>
-            </ul>
-
-            <br>
-
-            <b>Team:</b> 5 members
-            <a href="https://github.com/jerimiel/autonomous_robot" target="_blank">here</a> is the link to the github repo for the project.
+            <a class="project-tile" href="projects/FEA/index.html">
+                <img src="projects/FEA/proj.png" alt="Finite element analysis">
+                <div class="tile-body">
+                    <h4>Finite Element Analysis Solver</h4>
+                    <p>An FEA algorithm for testing how applied forces affect structures.</p>
+                    <div class="chips"><span>FEA</span><span>Structural analysis</span></div>
+                    <span class="tile-link">View project &rarr;</span>
+                </div>
+            </a>
 
         </div>
-
-    </div>
-
-</div>
-        
-        <a class="targ-proj" target="_blank">
-            <img class="proj-img" src="projects/spirit_level/proj.png" alt="project-image">
-            <div class="proj documentation">
-                
-                <p class="description"><b class="heading">Designed an electric spirit level using the MSP432</b>
-                    For my embedded systems and programming course, I used the MS432 development
-                    board and an accelerometer to make an electronic spirit level, which could
-                    tell the level of straightness of a surface with very little error. A battery powered
-                    spirit level that fits in a pocket in my opinion would be very handy and useful. It
-                    is economic and simply takes less space than the mechanical ones we are all
-                    used to. The code can be found <a class="here" target = "_blank" href="https://github.com/jerimiel/MSP432_spirit_level/tree/master">here</a> in my github repo.
-                </p>
-            </div>
-        </a>
-
-        <a class="targ-proj" target="_blank">
-            <img class="proj-img" src="projects/FEA/proj.png" alt="project-image">
-            <div class="proj documentation">
-                
-                <p class="description"><b class="heading">Wrote a finite element analysis algorithm.</b>
-                    Finite element analysis helps us to model structures and phenomenon that might
-                    be too expensive or simply impossible to test out. I wrote, the algorithm which was used in testing
-                    the effects on applying different forces on different structures including the eiffel tower.
-                </p>
-            </div>
-        </a>
-
-        <a class="targ-proj" target="_blank">
-            <img class="proj-img" src="projects/rain_pred/proj.png" alt="project-image">
-            <div class="proj documentation">
-                
-                <p class="description"><b class="heading">Trained a model that was deployed on a microcontroller.</b>The idea behind the project was to be able to allow a 
-                    microcontroller make decisions such as informing home occupants or controlling servos to close
-                     windows when there was rainfall. Temperature and humidity readings were collected over a period 
-                     using the DHT22 sensor and an ESP8266 microcontroller, sent to the thingspeak platform, cleaned 
-                     up and a model was trained (with an f1_score of 96.6), and deployed on an ESP8266
-                      wemos D1 microcontroller.
-                     The code can be found <a class="here" target = "_blank" href="https://github.com/jerimiel/esp8266_rain_prediction">here</a> in my github repo.
-                </p>
-            </div>
-        </a>
-
-        
     </section>
-
-
-
-
-<!-- This part is me testing vibe coding for web design-->
-    <section id="blog">
-    <h3 class="intro second">Blog</h3>
-    <p class="third">Thoughts, derivations, and experiments in control systems, robotics, and embedded intelligence.</p>
-
-    <div class="blog-container">
-
-        <div class="blog-card">
-            <h4 class="blog-title">From Torque to Speed: Modeling a Self-Balancing Robot</h4>
-            <p class="blog-date">March 2026</p>
-            <p class="blog-summary">
-                A deep dive into how motor torque translates into angular velocity in a two-wheel balancing robot.
-                Includes derivation of equivalent inertia and system identification insights.
-            </p>
-            <a href="blog/torque-to-speed.html" class="read-more">Read More →</a>
-        </div>
-
-        <div class="blog-card">
-            <h4 class="blog-title">System Identification for Embedded Control Systems</h4>
-            <p class="blog-date">March 2026</p>
-            <p class="blog-summary">
-                How to extract dynamic models from real hardware using minimal sensors. Focused on low-cost robotics platforms.
-            </p>
-            <a href="blog/sysid.html" class="read-more">Read More →</a>
-        </div>
-
-        <div class="blog-card">
-            <h4 class="blog-title">Why MPC is Hard on Microcontrollers (and how to fix it)</h4>
-            <p class="blog-date">Coming Soon</p>
-            <p class="blog-summary">
-                Exploring computational bottlenecks of Model Predictive Control and strategies for real-time embedded implementation.
-            </p>
-            <a href="#" class="read-more">Coming Soon</a>
-        </div>
-
-        <div class="blog-card">
-            <h4 class="blog-title">Stepper Motors vs DC Motors in Balancing Robots</h4>
-            <p class="blog-date">Coming Soon</p>
-            <p class="blog-summary">
-                A comparison of control strategies, limitations, and modeling differences between stepper-driven and DC-driven robots.
-            </p>
-            <a href="#" class="read-more">Coming Soon</a>
-        </div>
-
-    </div>
-</section>
-<!-- This part is me testing vibe coding for web design-->
 
 
 
@@ -431,7 +219,7 @@
     <section id="contact">
         <h3 class="intro second">Contact</h3>
         <p class="third">Feel free to send a mail.</p><br>
-        <a href="mailto:vicorapeh9@gmail.com"><button id="mail">Mail</button></a><br>
+        <a href="mailto:victorapeh9@gmail.com"><button id="mail">Mail</button></a><br>
     </section>  
 </body>
 </html>
