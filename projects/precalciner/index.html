@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreating an Industrial Plant and its PID Loop in Simulink | Victor Apeh</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" href="../../logo6.png">
+</head>
+<body>
+<main class="project-page">
+    <a class="back-link" href="../../index.html#projects">&larr; All projects</a>
+
+    <h1>Recreating an Industrial Plant and its PID Loop in Simulink</h1>
+    <p class="project-meta">M.Sc. thesis work &middot; Cement plant, Morocco &middot; 2026</p>
+    <div class="chips"><span>MATLAB / Simulink</span><span>PID</span><span>Process control</span><span>State-space models</span></div>
+
+    <img class="project-hero" src="simulink_plant.png" alt="Simulink model of the precalciner and its controller">
+
+    <h2>What I built</h2>
+    <p>As part of my thesis, I recreated a cement plant's precalciner and its temperature control loop in Simulink. The plant
+    model takes the real process inputs, the plant's PID temperature controller and fuel controller are rebuilt around it, and
+    the loop is closed on the simulated temperature, so the simulated controller makes its own decisions.</p>
+
+    <h2>Checking it against the real plant</h2>
+    <p>To test the recreation, I drove the simulation with recorded plant inputs and compared it with what the plant actually
+    did. The simulated temperature and the coke flow chosen by the simulated controller follow the plant closely.</p>
+
+    <div class="project-gallery">
+        <figure>
+            <img src="simulated_temp.png" alt="Simulated and measured calciner temperature">
+            <figcaption>Calciner temperature (&deg;C): simulated vs measured</figcaption>
+        </figure>
+        <figure>
+            <img src="simulated_coke.png" alt="Simulated and measured coke flow">
+            <figcaption>Coke flow (t/h): simulated controller vs plant</figcaption>
+        </figure>
+    </div>
+
+    <div class="project-gallery">
+        <figure>
+            <img src="controller_test_1.png" alt="Controller test: simulated and measured coke flow">
+            <figcaption>Controller test: simulated vs measured coke flow (t/h)</figcaption>
+        </figure>
+        <figure>
+            <img src="controller_test_2.png" alt="Controller test: simulated and measured coke flow">
+            <figcaption>Controller test: simulated vs measured coke flow (t/h)</figcaption>
+        </figure>
+    </div>
+</main>
+</body>
+</html>
